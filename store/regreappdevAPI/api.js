@@ -65,6 +65,9 @@ function rest_auth_registration_resend_email_create(payload) {
 function rest_auth_registration_verify_email_create(payload) {
   return regreappdevAPI.post(`/rest-auth/registration/verify-email/`, payload)
 }
+function supremarket_get_add_items_read(payload) {
+  return regreappdevAPI.get(`/api/v1/connectors/supremarket/add/items/`)
+}
 export const apiService = {
   api_v1_ggwsv_list,
   api_v1_ggwsv_create,
@@ -85,5 +88,6 @@ export const apiService = {
   rest_auth_password_change_create,
   rest_auth_password_reset_confirm_create,
   rest_auth_registration_resend_email_create,
-  rest_auth_registration_verify_email_create
+  rest_auth_registration_verify_email_create,
+  supremarket_get_add_items_read
 }
